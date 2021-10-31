@@ -5,58 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <style>
-       
-       body {
-                font-family: Arial, Helvetica, sans-serif ;
-                background-image: linear-gradient(45deg, cyan, yellow);
-         }
-         
-        div{
-                background-color: rgba(0, 0, 0, 0.9);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                padding: 80px;
-                border-radius: 10px;
-                color: white;
-        }
-
-        input{
-                padding: 10px;
-                border: none;
-                outline: none;
-                font-size: 15px;
-         }
-
-        button{
-                background-color: dodgerblue;
-                border: none;
-                padding: 15px;
-                width: 100%;
-                border-radius: 10px;
-                color: white;
-        }
-        button:hover{
-
-            background-color: deepskyblue;
-
-        }
-
-</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styleLogin.css">
 </head>
 <body>
-        <div class="tela-Login">
-            <h1>Login</h1>
-               
-            <input type="text" placeholder="Digite seu Login" >
-                <br><br>
-                <input type="password" placeholder="Digite sua senha">
-                <br><br>
-                <button>Entrar</button>
-    
-            </div>
+   <div id="login-container">
+     
+    <!-- Campos do Login -->
+    <h1>Login</h1>
+       <form action="">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
+                    <label for="password">Senha</label>
+                    <input for="password" name="password" id="password"placeholder="Digite a sua senha" ></input>
+                    <a href="https://google.com" id=forgot-pass>Esqueci a senha</a>
+                    <input type="submit" value="Login">
+         </form>
+         <div id="social-container">
+                    <p>Faça Login pelas redes sociais </p>
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-linkedin"></i>
+         </div>
+
+         <div id="register-container" ></div>
+            <p>Ainda não tem uma conta?</p>
+            <a href="#">Registrar</a>
+   </div>
 
 
 </body>
